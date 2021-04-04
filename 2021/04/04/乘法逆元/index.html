@@ -1,12 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/assets/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/assets/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/favicon-180x180.png?v=2.6.2" sizes="180x180"><link rel="mask-icon" href="/%5Bobject%20Object%5D?v=2.6.2" color="#54bcff"><meta name="msapplication-TileImage" content="/%5Bobject%20Object%5D"><meta name="msapplication-TileColor" content="#000000"><meta name="description" content="什么是逆元        模逆元也称为模倒数，或者模逆元。 一个整数$a$在模$n$意义下的逆元是指满足以下公式的整数$b$。  {\large a^{-1} \equiv b \quad (mod \;n)}也可以写成以下的式子  {\large ab \equiv 1 \quad (mod \; n)}或者  {\large ab \; mod \; n">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/assets/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/assets/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/favicon-180x180.png?v=2.6.2" sizes="180x180"><link rel="mask-icon" href="/%5Bobject%20Object%5D?v=2.6.2" color="#54bcff"><meta name="msapplication-TileImage" content="/%5Bobject%20Object%5D"><meta name="msapplication-TileColor" content="#000000"><meta name="description" content="什么是逆元        模逆元也称为模倒数，或者模逆元。 一个整数$a$在模$n$意义下的逆元是指满足以下公式的整数$b$。  {\large a^{-1} \equiv b \quad (mod \;n)}也可以写成以下的式子  {\large ab \equiv 1 \quad (mod \; n)}或者  {\large ab \; mod \; n &#x3D; 1}对于一个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="乘法逆元">
 <meta property="og:url" content="https://houkaige0205.github.io/2021/04/04/%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83/index.html">
 <meta property="og:site_name" content="Mason&#39;s Blog">
-<meta property="og:description" content="什么是逆元        模逆元也称为模倒数，或者模逆元。 一个整数$a$在模$n$意义下的逆元是指满足以下公式的整数$b$。  {\large a^{-1} \equiv b \quad (mod \;n)}也可以写成以下的式子  {\large ab \equiv 1 \quad (mod \; n)}或者  {\large ab \; mod \; n">
+<meta property="og:description" content="什么是逆元        模逆元也称为模倒数，或者模逆元。 一个整数$a$在模$n$意义下的逆元是指满足以下公式的整数$b$。  {\large a^{-1} \equiv b \quad (mod \;n)}也可以写成以下的式子  {\large ab \equiv 1 \quad (mod \; n)}或者  {\large ab \; mod \; n &#x3D; 1}对于一个">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-04T05:24:05.000Z">
-<meta property="article:modified_time" content="2021-04-04T05:24:58.373Z">
+<meta property="article:modified_time" content="2021-04-04T05:26:49.469Z">
 <meta property="article:author" content="Mason">
 <meta property="article:tag" content="-数论">
 <meta name="twitter:card" content="summary"><title>乘法逆元 | Mason's Blog</title><link ref="canonical" href="https://houkaige0205.github.io/2021/04/04/%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
@@ -49,6 +49,7 @@ window.CONFIG = CONFIG;</script><!-- hexo injector head_end start -->
 {\large ab \; mod \; n = 1}</script><p>对于一个整数$a$，它在模$n$意义下的逆元存在的<strong>充分必要条件</strong>是$gcd(a, n) = 1$，若此逆元存在，在模$n$意义下的除法可以用和对应的模拟元的乘法来达成，此概念和实数除法的概念相同。</p>
 <p>​                                                                                                        ——摘自<strong>wikipedia《模逆元》</strong></p>
 </blockquote>
+<a id="more"></a>
 <p>维基百科中对于模逆元的解释已经十分详细，在此需要特别指出的是$0$没有模逆元。不难发现的是，$a$在模$n$意义下的逆元均为$[1, n - 1]$中的整数。</p>
 
         <h2 id="逆元的求法"   >
